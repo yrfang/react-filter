@@ -5,7 +5,7 @@ const About = () => (
   <div>
     <Head>
       <title>About</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
     </Head>
     <section className="page_layout">
       <h1>About this project!!!</h1>
