@@ -12,9 +12,7 @@ class Navbar extends Component {
     return (
       <nav>
         <div>
-          <Link href="/">
-            <a title="Our API" className="link_item">Home</a>
-          </Link>
+          <a href="/" title="Our API" className="link_item">Home</a>
           <Link href="/about">
             <a title="About Next JS" className="link_item">About</a>
           </Link>

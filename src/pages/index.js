@@ -12,9 +12,14 @@ const App = () => {
         <title>My page title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <section className="page_layout">
+      <section className="page-section">
         <Navbar />
         <h1 className={styles.title}>Hi, Next!</h1>
+        <div className="container mx-auto">
+          <p>
+            Hi~~~
+          </p>
+        </div>
       </section>
     </div>
   )
