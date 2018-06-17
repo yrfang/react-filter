@@ -33,6 +33,9 @@ module.exports = {
         ]
       }
     );
+    config.module.config.push({
+      components: path.resolve(__dirname, './src/components')
+    });
     return config;
   }
 };
