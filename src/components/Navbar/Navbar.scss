@@ -1,11 +1,13 @@
+// glabal variable scss variable without module scope
 :global(.link_item) {
   margin-right: 10px;
 }
 
-mark {
-  border-radius: 10px;
-  background-color: lightblue;
-  display: flex;
-  flex-direction: column-reverse;
-  filter: blur(1px);
-}
+// postCss example
+// mark {
+//   border-radius: 10px;
+//   background-color: lightblue;
+//   display: flex;
+//   flex-direction: column-reverse;
+//   filter: blur(1px);
+// }

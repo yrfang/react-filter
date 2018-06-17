@@ -1,13 +1,16 @@
 import Head from "next/head";
+import Layout from "../components/Layout";
 
 const Post = (props) => (
   <div>
     <Head>
-      <title>My Post</title>
+      <title>Post</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
     </Head>
-    <section className="page_layout">
+    <Layout>
       <h1>{props.url.query.title}</h1>
+    </Layout>
+    <section className="page_layout">
       <p>
         Post the next
       </p>

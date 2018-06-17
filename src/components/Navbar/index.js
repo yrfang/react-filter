@@ -10,13 +10,22 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav>
-        <div>
-          <a href="/" title="Our API" className="link_item">Home</a>
-          <Link href="/about">
-            <a title="About Next JS" className="link_item">About</a>
-          </Link>
-          <mark className="badge">Hello!</mark>
+      <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+        <div className="container">
+          <a className="navbar-brand" href="/">ReactFilter</a>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link href="/">
+                <a href="/" title="Home Page" className="nav-link">Home</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/about">
+                <a title="About Next JS" className="nav-link">About</a>
+              </Link>
+            </li>
+          </ul>
+          {/* <mark className="badge">Hello!</mark> */}
         </div>
       </nav>
     );

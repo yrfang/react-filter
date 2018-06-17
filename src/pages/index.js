@@ -1,23 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import "../styles/page/layout.scss";
+import Layout from "../components/Layout";
 import styles from "../styles/page/index.scss";
 
-import Navbar from "../components/Navbar";
-
-const App = (props) => {
+const Index = (props) => {
   
   return (
     <div>
       <Head>
-        <title>My page title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" key="viewport" />
+        <title>Hi, Next!</title>
       </Head>
-      <section className="page_layout">
-        <Navbar />
+      <Layout>
         <h1 className={styles.title}>Hi, Next!</h1>
-        <div className="container mx-auto">
+      </Layout>
+      <section className="page_layout">
+        <div>
           <p>
             Hi~~~
           </p>
@@ -30,7 +28,7 @@ const App = (props) => {
   )
 };
 
-App.getInitialProps = async function(props) {
+Index.getInitialProps = async function(props) {
   let title = "Latest post on next js";
   let slug = 'latest-post-next.js';
   return {
@@ -39,4 +37,4 @@ App.getInitialProps = async function(props) {
   };
 }
 
-export default App;
+export default Index;
