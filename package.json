@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next src",
+    "dev": "nodemon server/index.js",
     "build": "next build src",
     "start": "next start src"
   },
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^8.6.2",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
   }
 }
