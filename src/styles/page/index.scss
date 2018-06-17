@@ -1,0 +1,9 @@
+$font_size: 48px;
+$font_color_green: green;
+
+.title {
+  font-size: $font_size;
+  font-style: italic;
+  text-decoration: underline;
+  color: $font_color_green;
+}
